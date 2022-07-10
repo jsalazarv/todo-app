@@ -1,3 +1,5 @@
+import {TodoList} from "../classes";
+
 const todoList = document.querySelector('.todo-list');
 
 export const createTodo = (todo) => {
@@ -23,3 +25,15 @@ export const createTodo = (todo) => {
 
     return div;
 }
+
+todoList.addEventListener('click', (event) => {
+    const item = event.target.parentElement.parentElement;
+    const clickedElement  = event.target.localName;
+    const itemId = item.getAttribute('data-id');
+    const todoList = new TodoList();
+
+    if(clickedElement.includes('input')) {
+        todoList.todoStatus(itemId);
+        item.classList.toggle('completed');
+    }
+});
