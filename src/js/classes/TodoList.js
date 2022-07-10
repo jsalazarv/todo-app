@@ -9,7 +9,16 @@ export class TodoList {
 
     deleteTodo(id) {}
 
-    todoStatus(id) {}
+    todoStatus(id) {
+        for (const todo of this.todos) {
+            console.log(id, todo);
+
+            if(todo.id === parseInt(id)) {
+                todo.completed = !todo.completed;
+                break;
+            }
+        }
+    }
 
     deleteCompletedTodo() {}
 }

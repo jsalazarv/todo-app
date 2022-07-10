@@ -1,6 +1,6 @@
 import './styles.css';
 import {Todo, TodoList} from './js/classes';
-import newTodoInput from "./js/events/newTodoInput";
+import {newTodoInput, taskCompleted} from './js/events'
 
 
 export const todoList = new TodoList();
