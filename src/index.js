@@ -1,12 +1,6 @@
 import './styles.css';
 import {Todo, TodoList} from './js/classes';
-import {createTodo} from "./js/components/createTodo";
+import newTodoInput from "./js/events/newTodoInput";
 
 
-const todoList = new TodoList();
-const todo = new Todo("Aprender Javascript");
-
-todoList.newTodo(todo);
-console.log(todoList);
-
-createTodo(todo);
+export const todoList = new TodoList();
