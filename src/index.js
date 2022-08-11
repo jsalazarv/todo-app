@@ -7,3 +7,5 @@ import {createTodo} from "./js/components/createTodo";
 export const todoList = new TodoList();
 
 todoList.todos.forEach(todo => createTodo(todo));
+
+console.log("todos", todoList.todos)
