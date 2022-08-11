@@ -1,7 +1,7 @@
 import {todoList} from "../../index";
 
-const deleteTask = document.querySelector('.todo-list');
 
+const deleteTask = document.querySelector('.todo-list');
 
 deleteTask.addEventListener('click', (event) => {
     const item = event.target.parentElement.parentElement;
