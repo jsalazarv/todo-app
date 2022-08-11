@@ -23,5 +23,8 @@ export class TodoList {
         console.log("[STATUSES]", this.todos);
     }
 
-    deleteCompletedTodo() {}
+    deleteCompletedTodo() {
+        this.todos = this.todos.filter(todo => !todo.completed);
+        console.log("[REMOVE COMPLETED]", this.todos);
+    }
 }
