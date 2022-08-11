@@ -5,19 +5,22 @@ export class TodoList {
 
     newTodo(task) {
         this.todos.push(task);
+        console.log("[NEW]", this.todos);
     }
 
-    deleteTodo(id) {}
+    deleteTodo(id) {
+        this.todos = this.todos.filter(todo => todo.id != id);
+        console.log("[REMOVED]", this.todos);
+    }
 
     todoStatus(id) {
         for (const todo of this.todos) {
-            console.log(id, todo);
-
             if(todo.id === parseInt(id)) {
                 todo.completed = !todo.completed;
                 break;
             }
         }
+        console.log("[STATUSES]", this.todos);
     }
 
     deleteCompletedTodo() {}
