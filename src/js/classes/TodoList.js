@@ -1,30 +1,40 @@
 export class TodoList {
     constructor() {
-        this.todos = [];
+        this.loadLocalStorage();
     }
 
     newTodo(task) {
         this.todos.push(task);
-        console.log("[NEW]", this.todos);
+        this.saveToLocalStorage();
     }
 
     deleteTodo(id) {
         this.todos = this.todos.filter(todo => todo.id != id);
-        console.log("[REMOVED]", this.todos);
+        this.saveToLocalStorage();
     }
 
     todoStatus(id) {
         for (const todo of this.todos) {
             if(todo.id === parseInt(id)) {
                 todo.completed = !todo.completed;
+                this.saveToLocalStorage();
                 break;
             }
         }
-        console.log("[STATUSES]", this.todos);
     }
 
     deleteCompletedTodo() {
         this.todos = this.todos.filter(todo => !todo.completed);
-        console.log("[REMOVE COMPLETED]", this.todos);
+        this.saveToLocalStorage();
+    }
+
+    saveToLocalStorage() {
+        localStorage.setItem("todos", JSON.stringify(this.todos));
+    }
+
+    loadLocalStorage() {
+        this.todos = (localStorage.getItem("todos"))
+            ? JSON.parse(localStorage.getItem("todos"))
+            : [];
     }
 }
