@@ -9,7 +9,7 @@ filters.addEventListener('click', (event) => {
     if(!filter) return;
 
     btnFilter.forEach(element => element.classList.remove('selected'));
-    event.target.classList.add('selected')
+    event.target.classList.add('selected');
 
     for(const element of todoListContainer.children) {
         element.classList.remove('hidden');

@@ -1,6 +1,7 @@
 import {Todo} from "../classes";
 import {todoList} from "../../index";
 import {createTodo} from "../components/createTodo";
+import setCounter from "./pendingTasks";
 
 
 const newTodoInput = document.querySelector('.new-todo');
@@ -12,6 +13,7 @@ newTodoInput.addEventListener('keyup', (event) => {
         todoList.newTodo(todo)
         createTodo(todo);
         newTodoInput.value = "";
+        setCounter();
     }
 });
 

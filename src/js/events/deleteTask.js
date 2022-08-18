@@ -1,4 +1,5 @@
 import {todoList} from "../../index";
+import setCounter from "./pendingTasks";
 
 
 const deleteTask = document.querySelector('.todo-list');
@@ -11,6 +12,7 @@ deleteTask.addEventListener('click', (event) => {
     if(clickedElement.includes('button')) {
         todoList.deleteTodo(itemId);
         deleteTask.removeChild(item);
+        setCounter();
     }
 });
 

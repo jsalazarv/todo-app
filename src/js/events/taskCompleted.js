@@ -1,5 +1,5 @@
 import {todoList} from "../../index";
-import setCounter from "./pendingTasks";
+import setCounter, {disabledFilters} from "./pendingTasks";
 
 
 const taskCompleted = document.querySelector('.todo-list');
@@ -13,6 +13,7 @@ taskCompleted.addEventListener('click', (event) => {
         todoList.todoStatus(itemId);
         item.classList.toggle('completed');
         setCounter();
+        disabledFilters();
     }
 });
 
