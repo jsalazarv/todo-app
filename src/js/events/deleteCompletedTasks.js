@@ -1,4 +1,5 @@
 import {todoList} from "../../index";
+import {disabledFilters} from "./pendingTasks";
 
 
 const deleteCompletedTasks = document.querySelector('.clear-completed');
@@ -15,6 +16,7 @@ deleteCompletedTasks.addEventListener('click', () => {
     }
 
     todoList.deleteCompletedTodo();
+    disabledFilters();
 });
 
 export default deleteCompletedTasks;
