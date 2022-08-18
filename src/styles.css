@@ -42,6 +42,11 @@ body {
     display: none;
 }
 
+.disabled {
+    pointer-events: none;
+    color: #999999 !important;
+}
+
 .todoapp {
     background: #fff;
     margin: 130px 0 40px 0;
