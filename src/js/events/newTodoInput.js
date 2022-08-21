@@ -1,5 +1,5 @@
 import {Todo} from "../classes";
-import {todoList} from "../../index";
+import {todoList} from "../../main";
 import {createTodo} from "../components/createTodo";
 import setCounter from "./pendingTasks";
 
