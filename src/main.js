@@ -1,4 +1,4 @@
-import './styles.css';
+import './index.css';
 import {Todo, TodoList} from './js/classes';
 import {newTodoInput, taskCompleted, deleteTask, deleteCompletedTasks, filters} from './js/events';
 import {createTodo} from "./js/components/createTodo";

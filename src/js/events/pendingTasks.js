@@ -1,4 +1,4 @@
-import {todoList} from "../../index";
+import {todoList} from "../../main";
 
 const counter = document.querySelector('.todo-count > strong');
 const pending = document.querySelector('.pending');

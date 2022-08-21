@@ -1,4 +1,4 @@
-import {todoList} from "../../index";
+import {todoList} from "../../main";
 import {disabledFilters} from "./pendingTasks";
 
 

@@ -1,4 +1,4 @@
-import {todoList} from "../../index";
+import {todoList} from "../../main";
 import setCounter from "./pendingTasks";
 
 
