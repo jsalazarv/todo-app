@@ -25,3 +25,7 @@
     @apply text-dark-200 !important;
     @apply font-medium !important;
 }
+
+:focus {
+    @apply outline-0;
+}

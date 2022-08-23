@@ -7,22 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #131721;
-}
-
-body {
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    line-height: 1.4em;
-    color: #111111;
-    min-width: 230px;
-    max-width: 550px;
-    margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 300;
-}
-
-:focus {
-    outline: 0;
 }
 
 .hidden {
@@ -35,24 +20,14 @@ body {
     @apply font-normal;
 }
 
-.todoapp {
-    margin: 130px 0 40px 0;
-    position: relative;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
-    0 25px 50px 0 rgba(0, 0, 0, 0.1);
-}
 
 .todoapp h1 {
-    position: absolute;
-    top: -140px;
-    width: 100%;
-    font-size: 80px;
-    font-weight: 200;
-    text-align: center;
-    color: #b83f45;
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
+    @apply text-dark-50;
+    @apply text-4xl;
+    @apply uppercase;
+    @apply font-medium;
+    @apply mb-10;
+    letter-spacing: 13px;
 }
 
 .main {
@@ -67,7 +42,7 @@ body {
 }
 
 .todo-list li {
-    position: relative;
+    @apply relative;
     @apply border-b;
     @apply border-dark-300;
     @apply bg-dark-500;
