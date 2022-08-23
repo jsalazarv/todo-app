@@ -57,6 +57,17 @@
     @apply text-center;
 }
 
+.clear-completed:hover {
+    @apply text-blue;
+}
+
+.clear-completed {
+    @apply float-right;
+    @apply relative;
+    @apply leading-5;
+    @apply cursor-pointer;
+}
+
 @media (min-width: 320px) {}
 @media (min-width: 480px) {}
 @media (min-width: 768px) {}

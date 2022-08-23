@@ -1,4 +1,5 @@
 import './index.css';
+import './css/input.css';
 import './css/checkbox.css';
 import './css/footer.css';
 

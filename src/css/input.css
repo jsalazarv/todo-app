@@ -1,13 +1,14 @@
 .input {
     @apply bg-dark-500;
     @apply relative;
-    @apply m-0;
     @apply pt-6 pr-6 pb-6 pl-14;
     @apply border-0;
     @apply w-full;
     @apply bg-blend-color;
     @apply text-dark-100;
     @apply font-medium;
+    @apply mb-6;
+    @apply rounded-lg;
 }
 
 .input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
