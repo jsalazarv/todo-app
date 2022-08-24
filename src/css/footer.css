@@ -3,11 +3,11 @@
     @apply h-16;
     @apply text-dark-200;
     @apply font-medium;
-    @apply bg-dark-500;
     @apply text-center;
     @apply border-t;
-    @apply border-dark-300;
+    @apply border-light-200 dark:border-dark-300;
     @apply rounded-b-lg;
+    @apply bg-light-50 dark:bg-dark-500;
 }
 
 .footer .todo-count {
@@ -34,7 +34,7 @@
 }
 
 .filters li a:hover {
-    @apply text-blue;
+    @apply text-blue dark:text-dark-50;
 }
 
 .filters li a.selected {
@@ -51,14 +51,14 @@
     @apply h-16;
     @apply text-dark-200;
     @apply font-medium;
-    @apply bg-dark-500;
+    @apply bg-light-50 dark:bg-dark-500;
     @apply mt-6;
     @apply rounded-lg;
     @apply text-center;
 }
 
 .clear-completed:hover {
-    @apply text-blue;
+    @apply text-blue dark:text-dark-50;
 }
 
 .clear-completed {

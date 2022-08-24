@@ -7,9 +7,9 @@
 .checkbox-round {
     width: 1.8rem;
     height: 1.8rem;
-    @apply bg-dark-500;
     @apply border;
-    @apply border-dark-300;
+    @apply border-dark-100;
+    @apply dark:border-dark-300;
     border-radius: 50%;
     appearance: none;
     -webkit-appearance: none;
