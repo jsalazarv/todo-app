@@ -24,6 +24,15 @@ module.exports = {
           400: "#484b6a",
         }
       },
+      backgroundImage: {
+        "banner-light": "url('src/assets/img/banner-light.jpg')",
+        "banner-dark": "url('src/assets/img/banner-dark.jpg')",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ["dark"],
     },
   },
   plugins: [],

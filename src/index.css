@@ -79,7 +79,6 @@ body {
 }
 
 .todo-list li .destroy {
-    display: none;
     position: absolute;
     top: 0;
     right: 10px;
@@ -112,4 +111,11 @@ body {
 
 .todo-list li.editing:last-child {
     margin-bottom: -1px;
+}
+
+
+@media (min-width: 992px) {
+    .todo-list li .destroy {
+        display: none;
+    }
 }
