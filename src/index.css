@@ -6,8 +6,12 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #131721;
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    @apply bg-light-100;
+    @apply dark:bg-dark-600;
 }
 
 .hidden {
@@ -16,7 +20,7 @@ body {
 
 .disabled {
     pointer-events: none;
-    @apply text-dark-400;
+    @apply text-light-200 dark:text-dark-400;
     @apply font-normal;
 }
 
@@ -39,14 +43,15 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    @apply text-dark-200;
+    @apply dark:text-dark-100;
 }
 
 .todo-list li {
     @apply relative;
     @apply border-b;
-    @apply border-dark-300;
-    @apply bg-dark-500;
-    @apply text-dark-100;
+    @apply border-light-200 dark:border-dark-300;
+    @apply bg-light-50 dark:bg-dark-500;
     @apply font-medium;
 }
 
@@ -69,12 +74,11 @@ body {
 
 
 .todo-list li.completed label {
-    color: #cdcdcd;
+    @apply text-light-200 dark:text-dark-200;
     text-decoration: line-through;
 }
 
 .todo-list li .destroy {
-    display: none;
     position: absolute;
     top: 0;
     right: 10px;
@@ -82,13 +86,15 @@ body {
     width: 40px;
     margin: auto 0;
     font-size: 30px;
-    @apply text-dark-300;
+    @apply text-dark-400;
     margin-bottom: 11px;
     transition: color 0.2s ease-out;
+    @apply font-light;
 }
 
 .todo-list li .destroy:hover {
-    @apply text-dark-200;
+    @apply text-light-400 dark:text-dark-300;
+    @apply font-light;
 }
 
 .todo-list li .destroy:after {
@@ -105,4 +111,11 @@ body {
 
 .todo-list li.editing:last-child {
     margin-bottom: -1px;
+}
+
+
+@media (min-width: 992px) {
+    .todo-list li .destroy {
+        display: none;
+    }
 }

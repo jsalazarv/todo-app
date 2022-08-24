@@ -12,7 +12,7 @@
 }
 
 .banner {
-    background-image: url("../assets/img/bg-header.jpg");
+    @apply bg-banner-light dark:bg-banner-dark;
     height: 30vh;
     background-position: center;
     background-size: cover;
