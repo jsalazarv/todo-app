@@ -1,0 +1,83 @@
+.footer {
+    @apply p-6;
+    @apply h-16;
+    @apply text-dark-200;
+    @apply font-medium;
+    @apply bg-dark-500;
+    @apply text-center;
+    @apply border-t;
+    @apply border-dark-300;
+    @apply rounded-b-lg;
+}
+
+.footer .todo-count {
+    @apply float-left;
+    @apply text-left;
+}
+
+.filters {
+    @apply m-0;
+    @apply p-0;
+    @apply list-none;
+    @apply absolute;
+    @apply right-0;
+    @apply left-0;
+}
+
+.filters li {
+    @apply inline;
+}
+
+.filters li a {
+    @apply mx-3;
+    @apply decoration-0;
+}
+
+.filters li a:hover {
+    @apply text-blue;
+}
+
+.filters li a.selected {
+    @apply text-blue;
+}
+
+.footer-filter {
+    @apply hidden;
+}
+
+
+.tools {
+    @apply p-6;
+    @apply h-16;
+    @apply text-dark-200;
+    @apply font-medium;
+    @apply bg-dark-500;
+    @apply mt-6;
+    @apply rounded-lg;
+    @apply text-center;
+}
+
+.clear-completed:hover {
+    @apply text-blue;
+}
+
+.clear-completed {
+    @apply float-right;
+    @apply relative;
+    @apply leading-5;
+    @apply cursor-pointer;
+}
+
+@media (min-width: 320px) {}
+@media (min-width: 480px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {
+    .footer-filter {
+        @apply inline;
+    }
+
+    .tools {
+        @apply hidden;
+    }
+}
+@media (min-width: 1200px) {}

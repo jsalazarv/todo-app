@@ -1,0 +1,31 @@
+.input {
+    @apply bg-dark-500;
+    @apply relative;
+    @apply pt-6 pr-6 pb-6 pl-14;
+    @apply border-0;
+    @apply w-full;
+    @apply bg-blend-color;
+    @apply text-dark-100;
+    @apply font-medium;
+    @apply mb-6;
+    @apply rounded-lg;
+}
+
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @apply text-dark-200 !important;
+    @apply font-medium !important;
+}
+
+.input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    @apply text-dark-200 !important;
+    @apply font-medium !important;
+}
+
+.input::-ms-input-placeholder { /* Microsoft Edge */
+    @apply text-dark-200 !important;
+    @apply font-medium !important;
+}
+
+:focus {
+    @apply outline-0;
+}

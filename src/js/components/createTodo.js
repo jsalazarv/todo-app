@@ -8,7 +8,7 @@ export const createTodo = (todo) => {
     const htmlTodo = `
         <li class="${completed}" data-id="${id}">
             <div class="view">
-                <input class="toggle" type="checkbox" ${checked}>
+                <input type="checkbox" class="checkbox-round" ${checked}>
                 <label>${todo.task}</label>
                 <button class="destroy"></button>
             </div>
