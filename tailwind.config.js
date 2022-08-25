@@ -25,8 +25,8 @@ module.exports = {
         }
       },
       backgroundImage: {
-        "banner-light": "url('src/assets/img/banner-light.jpg')",
-        "banner-dark": "url('src/assets/img/banner-dark.jpg')",
+        "banner-light": "url('/assets/img/banner-light.jpg')",
+        "banner-dark": "url('/assets/img/banner-dark.jpg')",
       },
     },
   },
