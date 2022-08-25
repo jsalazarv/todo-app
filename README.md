@@ -1,13 +1,12 @@
 # TODO APP
 
 
-## Todo list
 
 This is a solution to the todo list app challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
-
 ### The challenge
+
 
 Your challenge is to build out this todo app and get it looking as close to the design as possible.
 
@@ -23,7 +22,6 @@ Your users should be able to:
 - Toggle light and dark mode
 
 
-
 ### Solution Links
 
 
@@ -33,7 +31,31 @@ Your users should be able to:
 
 ### Built with
 
+
 - HTML5
 - ✨ Tailwind ✨
 - ✨ Javascript ✨
 - Vite
+
+
+### Install 
+
+
+Clone the project with the following command:
+
+```bash
+git clone https://github.com/jsalazarv/todo-app.git 
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Run project: 
+
+```bash
+npm run serve
+```
+
