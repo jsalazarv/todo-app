@@ -132,7 +132,7 @@ footer span {
 }
 
 footer .footer-phrase {
-    @apply text-2xl;
+    @apply text-xl;
     @apply text-blue dark:text-purple-400;
     @apply text-center;
     font-family: 'BeyondTheMountains', serif;
