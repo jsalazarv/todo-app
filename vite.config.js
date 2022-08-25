@@ -1,16 +1,7 @@
-/*
 import { defineConfig } from 'vite'
 
-export default defineConfig((config) => {
+export default defineConfig(({command, mode}) => {
     return {
-        assetsDir: 'assets',
-        assetsInclude: ['assets/img/!*'],
-        plugins: [],
-        publicDir: 'dist',
-        root: '.',
-        build: {
-            emptyOutDir: true,
-            outDir: './dist'
-        }
+        base: mode === "deploy" ? "./" : "/",
     }
-});*/
+});
