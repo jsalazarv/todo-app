@@ -7,6 +7,10 @@ module.exports = {
     extend: {
       colors: {
         blue: "#3a7bfd",
+        purple: {
+          light: "#AA70EF",
+          dark: "#7A1A6F",
+        },
         dark: {
           50: "#e4e5f1",
           100: "#cacde8",
@@ -25,8 +29,8 @@ module.exports = {
         }
       },
       backgroundImage: {
-        "banner-light": "url('src/assets/img/banner-light.jpg')",
-        "banner-dark": "url('src/assets/img/banner-dark.jpg')",
+        "banner-light": "url('/assets/img/banner-light.jpg')",
+        "banner-dark": "url('/assets/img/banner-dark.jpg')",
       },
     },
   },
