@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch vite",
     "build": "cross-env TAILWIND_MODE=build vite build",
+    "build:deploy": "cross-env TAILWIND_MODE=build vite build --mode=deploy",
     "serve": "vite preview"
   },
   "author": "Juan Salazar",
