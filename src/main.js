@@ -12,6 +12,10 @@ import setCounter, {disabledFilters} from "./js/events/pendingTasks";
 
 export const todoList = new TodoList();
 
-todoList.todos.forEach(todo => createTodo(todo));
-setCounter();
-disabledFilters();
+window.addEventListener("load", () => {
+    document.getElementById("app").classList.remove("app");
+
+    todoList.todos.forEach(todo => createTodo(todo));
+    setCounter();
+    disabledFilters();
+});
