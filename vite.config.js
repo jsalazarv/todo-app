@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
     return {
-        base: mode === "deploy" ? "/todo-app/" : "/",
+        base: "/todo-app/",
     }
 });
