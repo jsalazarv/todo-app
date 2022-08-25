@@ -1,7 +1,10 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
-export default defineConfig(({command, mode}) => {
+export default defineConfig(() => {
     return {
-        base: mode === "deploy" ? "./" : "/",
+        rollupOptions: {
+            main: resolve(__dirname, "index.html")
+        }
     }
 });
