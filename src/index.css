@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'BeyondTheMountains';
+    src: local('BeyondTheMountains'), url(./src/fonts/beyond_the_mountains/beyond_the_mountains.otf) format('woff');
+}
+
 html,
 body {
     margin: 0;
@@ -24,6 +29,9 @@ body {
     @apply font-normal;
 }
 
+.content {
+    min-height: 63vh;
+}
 
 .todoapp h1 {
     @apply text-dark-50;
@@ -111,6 +119,23 @@ body {
 
 .todo-list li.editing:last-child {
     margin-bottom: -1px;
+}
+
+footer {
+    @apply text-center;
+    @apply text-dark-500 dark:text-dark-50;
+    @apply pb-3;
+}
+
+footer span {
+    @apply text-blue dark:text-purple-400;
+}
+
+footer .footer-phrase {
+    @apply text-2xl;
+    @apply text-blue dark:text-purple-400;
+    @apply text-center;
+    font-family: 'BeyondTheMountains', serif;
 }
 
 

@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <title>Todo App</title>
     <style>
         .app {
             display: none;
         }
     </style>
+  <script type="module" crossorigin src="/todo-app/assets/index.3a2749ef.js"></script>
+  <link rel="stylesheet" href="/todo-app/assets/index.a08e0fb0.css">
 </head>
 <body>
 <div id="app" class="app">
@@ -63,22 +64,8 @@
             </section>
         </section>
     </div>
-    <footer>
-        <p class="footer-phrase">Coded with
-            <span>
-                <i class="fas fa-heart"></i>
-            </span>
-        </p>
-        <p>
-            A
-            <span>
-                <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>
-            </span>
-            challenge
-        </p>
-    </footer>
 </div>
-<script type="module" src="/src/main.js"></script>
+
 <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
